@@ -1,5 +1,5 @@
 import React from "react";
-import { AcademicCapIcon, BriefcaseIcon } from "@heroicons/react/24/solid";
+import { AcademicCapIcon, BriefcaseIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 import RevealOnScroll from "../RevealOnScroll";
 const About = () => {
   const frontend = ["HTML", "CSS", "React.js", "Javascript", "TailwindCss", "Next.js","Typescript"];
@@ -24,6 +24,14 @@ const About = () => {
               My expertise lies in building seamless, responsive user interfaces
               and crafting engaging digital experiences across platforms.
             </p>
+            <a
+              href="/SamsonKoremeneResume.pdf"
+              download
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white py-2.5 px-6 rounded-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(59,130,246,0.4)] text-sm sm:text-base"
+            >
+              <ArrowDownTrayIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+              Download Resume
+            </a>
           </div>
         </RevealOnScroll>
         <RevealOnScroll>

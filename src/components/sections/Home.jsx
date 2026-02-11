@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Name from "../Name";
-import Samtech from "../../assets/Samtech.png";
+import Profile from "../../assets/profile.jpg";
 const Home = ({ load }) => {
   const [button, showButton] = useState(false);
   const [buttonTwo, showButtonTwo] = useState(false);
+  const [imageScale, setImageScale] = useState(1);
+  const imageRef = useRef(null);
 
   useEffect(() => {
     let timerOne;
@@ -24,6 +26,23 @@ const Home = ({ load }) => {
       clearTimeout(timerTwo);
     };
   }, [load]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      // Simple calculation: zoom out as you scroll down
+      // At scroll 0: scale = 1
+      // At scroll 500: scale = 0.5
+      const scale = Math.max(0.5, 1 - (scrollY / 1000));
+      setImageScale(scale);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <section
       id="home"
@@ -59,13 +78,15 @@ const Home = ({ load }) => {
             </div>
           </div>
           <div className="flex justify-center md:justify-end mt-6 md:mt-0">
-            <div className="relative">
+            <div className="relative overflow-visible">
               {/* Glow effect behind image */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
               <img
-                src={Samtech}
+                ref={imageRef}
+                src={Profile}
                 alt="Samtech portrait"
-                className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl ring-2 ring-blue-500/20 hover:ring-blue-500/40 transition-all duration-500 animate-float hover:scale-105"
+                className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl ring-2 ring-blue-500/20 hover:ring-blue-500/40 transition-transform duration-200 animate-float"
+                style={{ transform: `scale(${imageScale})`, transformOrigin: 'center' }}
                 loading="eager"
                 decoding="async"
               />

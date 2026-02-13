@@ -5,9 +5,25 @@ import RevealOnScroll from "../RevealOnScroll";
 const Project = () => {
   const featuredProjects = [
     {
+      title: "Campus AI",
+      description:
+        "From instant AI answers to campus navigation and community connection, Campus AI gives you everything you need for Federal University Otuoke.",
+      technologies: ["Next.js", "Typescript", "TailwindCss"],
+      liveUrl: "https://campus-assist-ai-ss3x.vercel.app/",
+      githubUrl: "#",
+    },
+    {
+      title: "Union",
+      description:
+        "The trust-minimized, zero-knowledge bridging protocol, designed for censorship resistance, extremely high security, and usage in decentralized finance.",
+      technologies: ["Typescript", "Astro", "DeFi", "Protocol"],
+      liveUrl: "https://union.build/",
+      githubUrl: "https://github.com/unionlabs/union",
+    },
+    {
       title: "Bayelsa-Traffic-AI-Dynamics",
       description:
-        "A web platform that connects learners and experts, enabling users to exchange digital skills, book sessions, and grow their professional network.",
+        "A web-based intelligent traffic management platform that leverages Artificial Intelligence to monitor, analyze, and optimize traffic flow across Bayelsa State, enabling real-time congestion control, smart signal coordination, and data-driven urban mobility planning.",
       technologies: ["React.js", "Typescript", "Supabase","Tailwind-Css"],
       liveUrl: "https://bayelsa-traffic-ai-dynamics.vercel.app/",
       githubUrl: "#",

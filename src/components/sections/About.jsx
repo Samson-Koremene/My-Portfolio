@@ -86,6 +86,9 @@ const About = () => {
                   Otuoke (2020-2024)
                 </li>
                 <li>
+                  <strong>Frontend Web Development,</strong> - Computer Professionals Registration Council of Nigeria (January 2026)
+                </li>
+                <li>
                   <strong>Relevant course work:</strong> Data Structures, Web
                   Development...
                 </li>

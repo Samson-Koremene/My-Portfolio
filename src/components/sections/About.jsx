@@ -1,8 +1,22 @@
 import React from "react";
-import { AcademicCapIcon, BriefcaseIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
+import {
+  AcademicCapIcon,
+  BriefcaseIcon,
+  ArrowDownTrayIcon,
+} from "@heroicons/react/24/solid";
 import RevealOnScroll from "../RevealOnScroll";
 const About = () => {
-  const frontend = ["HTML", "CSS", "React.js", "Javascript", "TailwindCss", "Next.js","Typescript"];
+  const frontend = [
+    "HTML",
+    "CSS",
+    "React.js",
+    "React Native",
+    "Javascript",
+    "TailwindCss",
+    "Next.js",
+    "Astro.js",
+    "Typescript",
+  ];
   const backend = ["Supabase", "Firebase"];
 
   return (
@@ -12,20 +26,21 @@ const About = () => {
     >
       <div className="max-w-3xl mx-auto w-full">
         <RevealOnScroll>
-          <h2 
+          <h2
             className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center tracking-tight"
-            style={{ fontFamily: 'var(--font-space)' }}
+            style={{ fontFamily: "var(--font-space)" }}
           >
             About me
           </h2>
           <div className="max-w-3xl mx-auto p-4 sm:p-6 border-white/10 border rounded-xl hover:-translate-y-1 transition-all duration-300 text-center backdrop-blur-sm bg-white/[0.02] hover:bg-white/[0.04] hover:border-blue-500/30 hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)]">
             <p className="mb-4 sm:mb-6 text-sm sm:text-base text-gray-300 leading-relaxed">
-              I am a passionate Frontend Web Developer and specialist with a keen eye for design and a drive for innovation.
-              My expertise lies in building seamless, responsive user interfaces
-              and crafting engaging digital experiences across platforms.
+              I am a passionate Frontend Web Developer and specialist with a
+              keen eye for design and a drive for innovation. My expertise lies
+              in building seamless, responsive user interfaces and crafting
+              engaging digital experiences across platforms.
             </p>
             <a
-              href="/SamsonKoremeneResume.pdf"
+              href="/Samson_Koremene_Resume.pdf"
               download
               className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white py-2.5 px-6 rounded-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(59,130,246,0.4)] text-sm sm:text-base"
             >
@@ -37,9 +52,9 @@ const About = () => {
         <RevealOnScroll>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-8 sm:mt-12">
             <div className="rounded-xl p-4 sm:p-6 hover:-translate-y-2 transition-all duration-300 backdrop-blur-sm bg-gradient-to-br from-blue-500/5 to-transparent border border-white/5 hover:border-blue-500/30 hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)]">
-              <h3 
+              <h3
                 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
-                style={{ fontFamily: 'var(--font-space)' }}
+                style={{ fontFamily: "var(--font-space)" }}
               >
                 Frontend
               </h3>
@@ -55,9 +70,9 @@ const About = () => {
               </div>
             </div>
             <div className="rounded-xl p-4 sm:p-6 hover:-translate-y-2 transition-all duration-300 backdrop-blur-sm bg-gradient-to-br from-cyan-500/5 to-transparent border border-white/5 hover:border-cyan-500/30 hover:shadow-[0_8px_30px_rgba(34,211,238,0.15)]">
-              <h3 
+              <h3
                 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent"
-                style={{ fontFamily: 'var(--font-space)' }}
+                style={{ fontFamily: "var(--font-space)" }}
               >
                 Backend
               </h3>
@@ -86,7 +101,12 @@ const About = () => {
                   Otuoke (2020-2024)
                 </li>
                 <li>
-                  <strong>Frontend Web Development,</strong> - Computer Professionals Registration Council of Nigeria (January 2026)
+                  <strong>Frontend Web Development Level 3,</strong> - Computer
+                  Professionals Registration Council of Nigeria (Issued Jan
+                  2026)
+                </li>
+                <li>
+                  <strong>MERN Stack,</strong> - Simplilearn (Issued Nov 2025)
                 </li>
                 <li>
                   <strong>Relevant course work:</strong> Data Structures, Web
@@ -96,9 +116,28 @@ const About = () => {
             </div>
             <div className="p-4 sm:p-6 rounded-xl border-white/10 border hover:-translate-y-2 transition-all duration-300 backdrop-blur-sm bg-white/[0.02] hover:bg-white/[0.04] hover:border-cyan-500/30 hover:shadow-[0_8px_30px_rgba(34,211,238,0.15)]">
               <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 flex items-center gap-2 text-cyan-400">
-                <BriefcaseIcon className="w-4 h-4 sm:w-5 sm:h-5" /> Work Experience
+                <BriefcaseIcon className="w-4 h-4 sm:w-5 sm:h-5" /> Work
+                Experience
               </h3>
               <div className="space-y-3 sm:space-y-4 text-gray-300">
+                <div>
+                  <h4 className="font-semibold text-sm sm:text-base">
+                    Front-end AI Engineer
+                  </h4>
+                  <p className="text-xs sm:text-sm text-gray-400">
+                    FlyRank AI · Internship
+                  </p>
+                  <p className="text-xs sm:text-sm text-gray-500">
+                    Jun 2026 - Present · 4 mos
+                  </p>
+                  <p className="text-xs sm:text-sm">
+                    Lagos State, Nigeria · Remote
+                  </p>
+                  <p className="text-xs sm:text-sm mt-2">
+                    Currently interning at FlyRank AI as an AI intern, focusing
+                    on Front-end AI Engineering.
+                  </p>
+                </div>
                 <div>
                   <h4 className="font-semibold text-sm sm:text-base">
                     Medicx (2025-present)

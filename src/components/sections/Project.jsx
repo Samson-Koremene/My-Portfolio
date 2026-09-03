@@ -41,7 +41,7 @@ const Project = () => {
       description:
         "Built the frontend for NexMart, a premium e-commerce marketplace focused on curated quality and seamless delivery experiences.",
       technologies: ["React", "Typescript", "TailwindCss"],
-      liveUrl: "https://nexmart-frontend-staging.onrender.com/",
+      liveUrl: "https://www.nexmartapp.com/",
       githubUrl: "#",
     },
     {
